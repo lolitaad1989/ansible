@@ -12,5 +12,9 @@
         msg: The value of URL is {{URL}}
       vars: 
         URL: facebook.com
+
+    - name: Printing the value of NULL 
+      ansible.builtin.debug:
+        msg: The value of URL is "{{CLI_URL}}"
       
 
