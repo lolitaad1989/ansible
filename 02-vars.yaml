@@ -8,8 +8,9 @@
         msg: "{{URL}}"
 
     - name: Printing the value of URL
-      vars: 
-        URL: facebook.com
       ansible.builtin.debug:
         msg: The value of URL is {{URL}}
+      vars: 
+        URL: facebook.com
+      
 
