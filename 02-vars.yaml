@@ -1,8 +1,9 @@
 - name: Demo on using variables
   hosts: all
   vars:
-    URL: play-google.com
+    URL: play.google.com
   tasks:
     - name: Printing the value of URL
       ansible.builtin.debug:
-        msg: {{URL}}
+        msg: "{{URL}}"
+
