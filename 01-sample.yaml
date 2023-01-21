@@ -4,7 +4,7 @@
     - name: Printing hello 1
       ansible.builtin.debug:
         msg: Hello from play1 task 1
-    -name: Printing hello
+    - name: Printing hello
       anislbe.builtin.debug:
         msg: Hello from play1 task 2
 
