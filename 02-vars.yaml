@@ -8,6 +8,7 @@
         msg: "{{URL}}"
 
     - name: Printing the value of URL
+      hosts: qa
       ansible.builtin.debug:
         msg: The value of URL is {{URL}}
 
