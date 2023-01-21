@@ -5,12 +5,12 @@
       ansible.builtin.debug:
         msg: Hello from task2
 
-# - name: Play 2
-#   hosts: dev
-#   tasks:
-#     - name: Printing hello 2
-#       ansible.builtin.debug:
-#         msg: Hello from task 2
+- name: Play 2
+  hosts: dev
+  tasks:
+    - name: Printing hello 2
+      ansible.builtin.debug:
+        msg: Hello from task 2
 
 
 # - name: Play1  
