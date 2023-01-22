@@ -4,5 +4,5 @@
     - name: task1
       ansible.builtin.shell: uptime
       register: OUT  # register captures the output command and preserers in variable name of out choice
-        msg: 
-          - Uptime is {{OUT}}
+      msg: 
+        - Uptime is {{OUT}}
