@@ -16,3 +16,10 @@
     - name: Printing exit code
       ansible.builtin.debug:
         msg: "{{STATUS}}"
+
+    - name: Execute the ps command
+      ansible.builtin.shell: ps -ef| grep jenkins
+
+    - name: Print the status of ps command
+      ansible.builtin.debug:
+        msg: Hai
