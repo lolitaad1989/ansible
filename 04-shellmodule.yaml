@@ -2,5 +2,5 @@
   hosts: all
   tasks:
     - name: task1
-      ansible.builtin.shell
-        msg: Uptime is {{uptime}}
+      ansible.builtin.shell uptime
+      #  msg: Uptime is {{uptime}}
