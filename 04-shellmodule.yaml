@@ -8,4 +8,11 @@
     - name: task2
       ansible.builtin.debug:
         msg: "{{OUT.stdout}}"
- #       - Uptime is {{OUT}}
+
+    - name: task2
+      ansible.builtin.debug:
+        msg: "{{OUT.rc}}"
+
+    - name: Printing exit code
+      ansible.builtin.set_fact:
+        msg: "{{STATUS}}"
