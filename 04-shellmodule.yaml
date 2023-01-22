@@ -4,5 +4,8 @@
     - name: task1
       ansible.builtin.shell: uptime
       register: OUT  # register captures the output command and preserers in variable name of out choice
+      
+    - name: task2
+      ansible.builtin.debug:
       msg: 
         - Uptime is {{OUT}}
