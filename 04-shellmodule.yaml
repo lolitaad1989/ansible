@@ -10,8 +10,8 @@
         msg: "{{OUT.stdout}}"
 
     - name: task2
-      ansible.builtin.debug:
-        msg: "{{OUT.rc}}"
+      ansible.builtin.setfact:
+        STATUS: "{{OUT.rc}}"
 
     - name: Printing exit code
       ansible.builtin.debug:
