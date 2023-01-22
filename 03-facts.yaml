@@ -8,4 +8,4 @@
     - name: task 2 
       ansible.builtin.debug:
         msg: IP address of all hosts = {{ansible_default_ipv4.address}}
-        msg: Macaddress of all hosts = {{ansible_default_ipv4.macaddress"}}
+        msg: Macaddress of all hosts = {{ansible_default_ipv4.macaddress}
