@@ -2,7 +2,7 @@
   hosts: all
   vars:
     actions: false
-    test: 
+#    test: i
   tasks:
     - name: Run this command on centos machines
       ansible.builtin.debug:
