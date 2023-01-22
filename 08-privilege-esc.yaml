@@ -1,5 +1,6 @@
 - name: Demo on priviledge escalation
   hosts: all
+  become: yes
   tasks:
     - name: Executing the shell command
       ansible.builtin.shell: id
