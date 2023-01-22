@@ -1,0 +1,6 @@
+- name: Shell module
+  hosts: all
+  tasks:
+    - name: task1
+      ansible.builtin.shell
+        msg: Uptime is {{uptime}}
