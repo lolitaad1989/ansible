@@ -1,0 +1,10 @@
+- name: Demo on ingore erros
+  hosts: all
+  tasks: 
+    - name: Checking if tomcat is running or not
+      ansible.builtin.shell: ps -ef | egrep -i tomcat
+      register: OUT
+
+    - name: Startign Tomcat
+      ansible.builtin.debug: 
+        msg: Starting tomcat....
