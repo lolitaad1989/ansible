@@ -7,5 +7,5 @@
       
     - name: task2
       ansible.builtin.debug:
-      msg: 
-        - Uptime is {{OUT}}
+      msg: {{OUT}}
+ #       - Uptime is {{OUT}}
