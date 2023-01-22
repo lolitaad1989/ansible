@@ -1,0 +1,10 @@
+- name: Demo on priviledge escalation
+  hosts: all
+  tasks:
+    - name: Executing the shell command
+      ansible.builtin.shell: id
+      register: OUT
+
+    - name: Displaying the output
+      ansible.builtin.debug:
+      msg: "{{OUT}}"
