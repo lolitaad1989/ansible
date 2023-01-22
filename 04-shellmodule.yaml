@@ -2,4 +2,4 @@
   hosts: all
   tasks:
     - name: task1
-      ansible.builtin.shell uptime: uptime
+      ansible.builtin.shell: uptime
