@@ -14,5 +14,5 @@
         msg: "{{OUT.rc}}"
 
     - name: Printing exit code
-      ansible.builtin.set_fact:
+      ansible.builtin.debug:
         msg: "{{STATUS}}"
