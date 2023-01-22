@@ -9,7 +9,7 @@
       ansible.builtin.debug:
         msg: "{{OUT.stdout}}"
 
-    - name: task2
+    - name: task3
       ansible.builtin.setfact:
         STATUS: "{{OUT.rc}}"
 
