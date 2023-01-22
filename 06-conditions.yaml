@@ -1,13 +1,12 @@
 - name: Demo on using conditions
   hosts: all
-  vars:
-    action: true
+#  vars:
+ #   action: true
   tasks:
     - name: Run this command on centos machines
       ansible.builtin.debug:
         msg: Hi I am centos
       when: ansible_distribution == "Centos"
-      
 
     - name: Run this command on Ubuntu machines
       ansible.builtin.debug:
