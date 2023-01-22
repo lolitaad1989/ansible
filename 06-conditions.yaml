@@ -22,4 +22,4 @@
     - name: Run this action
       ansible.builtin.debug:
         msg: I will only run when test is declared
-      when: test is defined
+      when: test is undefined
