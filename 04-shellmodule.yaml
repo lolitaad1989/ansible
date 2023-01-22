@@ -10,7 +10,7 @@
         msg: "{{OUT.stdout}}"
 
     - name: task3
-      ansible.builtin.setfact:
+      ansible.builtin.set_fact:
         STATUS: "{{OUT.rc}}"
 
     - name: Printing exit code
