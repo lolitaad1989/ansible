@@ -7,4 +7,4 @@
 
     - name: Displaying the output
       ansible.builtin.debug:
-        msg: "{{OUT}}"
+        msg: "{{OUT.stdout}}"
