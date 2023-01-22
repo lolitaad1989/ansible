@@ -3,5 +3,5 @@
   tasks: 
   - name: Copy file with owner and permissions
     ansible.builtin.copy:
-      src: index.html
+      src: indexdemo.html
       dest: /home/centos
