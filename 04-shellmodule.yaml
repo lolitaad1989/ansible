@@ -18,7 +18,7 @@
         msg: "{{STATUS}}"
 
     - name: Execute the ps command
-      ansible.builtin.shell: ps -ef| grep jenkins
+      ansible.builtin.shell: ps -ef| grep jenkins| grep -v grep
 
     - name: Print the status of ps command
       ansible.builtin.debug:
