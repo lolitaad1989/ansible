@@ -3,4 +3,3 @@
   tasks:
     - name: task1
       ansible.builtin.shell uptime: uptime
-      #  msg: Uptime is {{uptime}}
