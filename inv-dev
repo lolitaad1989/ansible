@@ -1,8 +1,8 @@
 [frontend]
-frontend-dev.roboshop.internal
+172.31.5.221
 
 [mongodb]
-mongodb-dev.roboshop.internal
+172.31.4.219
 
 [catalogue]
-catalogue-dev.roboshop.internal
+172.31.5.221
