@@ -2,3 +2,26 @@
   ansible.builtin.package:
     name: nginx
     state: present
+
+  - name: Download and extracting
+    ansible.builtin.unarchive:
+      src: https://github.com/stans-robot-project/frontend/archive/main.zip
+      dest: /tmp
+      remote_src: yes
+
+  - name: Cleaning old html content
+    ansible.builtin.file:
+      path: /usr/share/nginx/html
+      state: absent
+
+  - name: Copy the frontend content to nginx path
+    ansible.builtin.copy:
+      src: /tmp/frontend-main/static
+      dest: /usr/share/nginx/html/
+      remote_src: yes
+
+  - name: Copy Nginx config
+    ansible.builtin.copy:
+      src: roboshop.conf
+      dest: /etc/nginx/default.d/roboshop.conf
+    
