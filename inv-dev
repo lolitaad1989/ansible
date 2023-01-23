@@ -2,7 +2,7 @@
 172.31.11.52
 
 [mongodb]
-mongodb-dev.roboshop.internal
+172.31.4.219
 
 [catalogue]
 catalogue-dev.roboshop.internal
