@@ -30,3 +30,7 @@
     owner: "{{APPUSER}}"
     group: "{{APPUSER}}"
 
+- name: Installing nodejs package
+  community.general.npm:
+    path: /home/{{APPUSER}}/{{COMPONENT}}/
+
