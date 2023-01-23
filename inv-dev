@@ -1,0 +1,8 @@
+[frontend]
+172.31.11.52
+
+[mongodb]
+mongodb-dev.roboshop.internal
+
+[catalogue]
+catalogue-dev.roboshop.internal
