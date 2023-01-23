@@ -21,6 +21,7 @@
   ansible.builtin.copy:
     src: /tmp/{{COMPONENT}}-main/
     dest: /home/{{APPUSER}}/{{COMPONENT}}
+    remote_src: yes
     owner: "{{APPUSER}}"
     group: "{{APPUSER}}"
 
