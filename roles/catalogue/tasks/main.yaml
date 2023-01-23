@@ -20,7 +20,6 @@
 - name: Cleanup of old content
   ansible.builtin.file:
     path: /home/{{APPUSER}}/{{COMPONENT}}/
-    remote_src: yes
     recurse: yes
 
 - name: Copy files to roboshop homedir
