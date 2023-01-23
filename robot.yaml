@@ -1,6 +1,12 @@
 #Playbook which calls the roles
-- name: Configuring the roboshop project
-  hosts: frontend
-  become: yes
-  roles:
-    - frontend
+# - name: Configuring the roboshop project
+#   hosts: frontend
+#   become: yes
+#   roles:
+#     - frontend
+
+  - name: Configuring Roboshop Project 
+    hosts: frontend
+    become: yes 
+    roles:
+      - frontend 
