@@ -14,7 +14,7 @@ pipeline {
         stage ('Performing a dry run') {
             steps {
                 sh "env"
-                sh "Runs only against a PR"
+                sh "echo Runs only against a PR"
                 //sh "ansible-playbook robot-dryrun.yml  -e COMPONENT=mongodb -e ansible_user=${SSH_CRED_USR} -e ansible_password=${SSH_CRED_PSW} -e ENV=dev"
             }
         }
