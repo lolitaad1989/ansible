@@ -29,4 +29,5 @@ pipeline {
             }
     }
 }
+}
 //pushing changes to feature branch
