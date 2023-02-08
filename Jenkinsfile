@@ -12,9 +12,6 @@ pipeline {
             }
         }
         stage ('Performing a dry run') {
-            when {
-                branch 'main'
-            }
             steps {
                 sh "env"
                 sh "Runs only against a PR"
