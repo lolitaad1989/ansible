@@ -27,7 +27,7 @@ pipeline {
                 sh "env"
                 sh "echo Main Branch"
             }
+        }
     }
-}
 }
 //pushing changes to feature branch
