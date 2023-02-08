@@ -13,11 +13,11 @@ pipeline {
             }
         }  
 
-        stage('Performing a Dry-Run') {                 // Just for demo purpose we have hardcoded env and component; That can still be parameterised.
+        stage('Performing a Dry-Run') {                 // So ust for demo purpose we have hardcoded env and component; That can still be parameterised.
             when { branch pattern: "PR-.*", comparator: "REGEXP"}
             steps {
                 sh "env"
-                sh "Runs only aginst a PR"
+                sh "echo Runs only aginst a PR"
             }
         }
 
